@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renan Santos — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo" data-tab-link="inicio">
+      <span class="logo-bracket">&lt;</span>Renan<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="nav-link active" data-tab-link="inicio"><span class="nav-index">01</span>Início</a></li>
+      <li><a href="#" class="nav-link" data-tab-link="sobre"><span class="nav-index">02</span>Sobre</a></li>
+      <li><a href="#" class="nav-link" data-tab-link="competencias"><span class="nav-index">03</span>Competências</a></li>
+      <li><a href="#" class="nav-link" data-tab-link="contato"><span class="nav-index">04</span>Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- INÍCIO -->
+  <section class="tab-panel active" id="inicio">
+    <div class="section-inner hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">$ whoami</p>
+        <h1 class="hero-title">Renan Santos</h1>
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">renan@portfolio: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">&gt;</span> Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <p><span class="prompt">&gt;</span> Webdesigner</p>
+            <p><span class="prompt">&gt;</span> Foco em desenvolvimento <span id="typedText" class="typed"></span><span class="cursor">&nbsp;</span></p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" data-tab-link="contato">Entrar em contato</a>
+          <a href="#" class="btn btn-ghost" data-tab-link="competencias">Ver competências</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">perfil.json</span>
+          </div>
+          <pre class="code-block"><code><span class="tok-key">"nome"</span>: <span class="tok-str">"Renan Santos"</span>,
+<span class="tok-key">"curso"</span>: <span class="tok-str">"Análise e Desenvolvimento de Sistemas"</span>,
+<span class="tok-key">"foco"</span>: <span class="tok-str">"Full Stack"</span>,
+<span class="tok-key">"stack"</span>: [
+  <span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JavaScript"</span>,
+  <span class="tok-str">"Python"</span>, <span class="tok-str">"Java"</span>, <span class="tok-str">"Node.js"</span>
+],
+<span class="tok-key">"status"</span>: <span class="tok-str">"disponível para estágio"</span>
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="tab-panel" id="sobre">
+    <div class="section-inner about-grid">
+      <div class="about-media">
+        <div class="photo-frame" id="aboutCarousel">
+          <img src="img/renan-foto.jpg" alt="Renan Santos" class="carousel-slide active" data-slide="0">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Código em tela de computador" class="carousel-slide" data-slide="1">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Tela com linhas de código" class="carousel-slide" data-slide="2">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=800&q=80" alt="Notebook com código aberto" class="carousel-slide" data-slide="3">
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+        <div class="quote-box">
+          <p><span class="prompt">&gt;</span> "Gosto de acompanhar visualmente o resultado do meu trabalho."</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">$ cat sobre.md</p>
+        <h2 class="section-title">Sobre mim</h2>
+        <p>Olá, meu nome é Renan Santos, sou estudante de Análise e Desenvolvimento de Sistemas e busco uma oportunidade de estágio em Tecnologia, com foco em desenvolvimento de sistemas.</p>
+        <p>Já possuo experiência profissional na área, adquirida na Bro Fitwear, onde tive contato direto com sistemas como Trovata, Linx e-Millennium. Atuei com catálogo digital, resolução de problemas, monitoramento de banco de dados e acompanhamento de relatórios das filiais, desenvolvendo uma visão prática sobre o funcionamento dos sistemas e a importância da tecnologia para os processos de uma empresa.</p>
+        <p>Meu objetivo profissional é me tornar um desenvolvedor Full Stack. Atualmente, tenho maior afinidade com desenvolvimento Web e Web Design, área que une tecnologia e criatividade e na qual gosto de acompanhar visualmente o resultado do meu trabalho. Tenho conhecimentos em HTML, CSS, JavaScript e Python e venho ampliando minha formação em Back-end por meio dos estudos de Java e Node.js.</p>
+        <p>Busco uma oportunidade que esteja alinhada aos meus objetivos e que me permita transformar meus conhecimentos em resultados, assumir novos desafios e evoluir profissionalmente. Acredito que minha experiência prática, capacidade de resolução de problemas e vontade de aprender podem agregar à equipe, enquanto construo uma trajetória sólida como desenvolvedor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
+  <section class="tab-panel" id="competencias">
+    <div class="section-inner">
+      <p class="section-eyebrow">$ ls competencias/</p>
+      <h2 class="section-title">Competências</h2>
+
+      <div class="lang-block">
+        <h3 class="skills-group-title">Linguagens</h3>
+        <div class="lang-icons">
+          <span class="lang-icon lang-icon-html" title="HTML5">&lt;/&gt;</span>
+          <span class="lang-icon lang-icon-css" title="CSS3">#</span>
+          <span class="lang-icon lang-icon-js" title="JavaScript">JS</span>
+          <span class="lang-icon lang-icon-py" title="Python">Py</span>
+          <span class="lang-icon lang-icon-java" title="Java">&#9749;</span>
+          <span class="lang-icon lang-icon-c" title="C">C</span>
+          <span class="lang-icon lang-icon-cpp" title="C++">C++</span>
+          <span class="lang-icon lang-icon-php" title="PHP">PHP</span>
+          <span class="lang-icon lang-icon-json" title="JSON">{ }</span>
+          <span class="lang-icon lang-icon-node lang-icon-beginner" title="Node.js — iniciante">&#11043;</span>
+        </div>
+      </div>
+
+      <div class="lang-block">
+        <h3 class="skills-group-title">Outras habilidades</h3>
+        <div class="lang-chips">
+          <span class="lang-chip lang-chip-light">SQL <em>(iniciante)</em></span>
+          <span class="lang-chip lang-chip-light">Linux <em>(básico)</em></span>
+          <span class="lang-chip lang-chip-light">Inglês <em>(leitura, nível intermediário)</em></span>
+        </div>
+      </div>
+
+      <div class="skills-columns">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Front-end</h3>
+          <div class="skill-row">
+            <div class="skill-head"><span>HTML5</span><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>CSS3</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Back-end &amp; Dados</h3>
+          <div class="skill-row">
+            <div class="skill-head"><span>Python</span><span class="skill-pct">65%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:65%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>Java</span><span class="skill-pct">50%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:50%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>Node.js</span><span class="skill-pct">45%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:45%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Ferramentas &amp; Sistemas</h3>
+          <div class="skill-row">
+            <div class="skill-head"><span>Linx e-Millennium</span><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>Trovata</span><span class="skill-pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:75%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head"><span>Git &amp; GitHub</span><span class="skill-pct">70%</span></div>
+            <div class="skill-track"><div class="skill-fill" style="--pct:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-block">
+        <h3 class="skills-group-title">Experiência profissional</h3>
+        <div class="experience-card">
+          <div class="experience-media media-logo">
+            <img src="img/brofitwear-logo.jpg" alt="Logo Bro Fitwear">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h4>Bro Fitwear</h4>
+              <span class="experience-tag">Sistema: Trovata</span>
+            </div>
+            <p>Atuei com o dia a dia operacional e tecnológico da loja, trabalhando dentro do sistema <strong>Trovata</strong>, com contato direto também com o Linx e-Millennium.</p>
+            <ul class="experience-list">
+              <li>Controle e acompanhamento de relatórios das filiais, com apoio de Excel</li>
+              <li>Monitoramento e controle do banco de dados da empresa</li>
+              <li>Criação e manutenção de catálogos digitais</li>
+              <li>Manutenção preventiva dos aparelhos e equipamentos de hardware</li>
+              <li>Manutenção no sistema quando autorizado, utilizando <strong>PHP</strong> como linguagem principal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-block">
+        <h3 class="skills-group-title">Cursos e certificações</h3>
+        <div class="experience-card">
+          <div class="experience-media media-doc">
+            <img src="img/aws-certificado.jpg" alt="Certificado AWS Training & Certification - Job Roles in the Cloud">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h4>AWS Training &amp; Certification</h4>
+              <span class="experience-tag">Concluído — set/2026</span>
+            </div>
+            <p>Certificado de conclusão do curso <strong>"Job Roles in the Cloud"</strong> (em Português), pela AWS Training &amp; Certification.</p>
+            <ul class="experience-list">
+              <li>Panorama das principais funções de trabalho na área de nuvem</li>
+              <li>Fundamentos de infraestrutura e serviços em nuvem AWS</li>
+              <li>Certificado emitido em nome de Renan Santos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="tab-panel" id="contato">
+    <div class="section-inner contact-grid">
+      <div>
+        <p class="section-eyebrow">$ ping renan</p>
+        <h2 class="section-title">Vamos conversar</h2>
+        <p class="contact-lead">Aberto a oportunidades de estágio em Tecnologia. Envie uma mensagem ou me encontre nos canais abaixo.</p>
+
+        <div class="social-buttons">
+          <div class="social-btn social-btn-static" aria-label="Email de contato">
+            <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+              <path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 9L3.5 6.2V18h17V6.2L12 13zm0-2.2L20.4 6H3.6L12 10.8z"/>
+            </svg>
+            <span>renansantos070805@gmail.com</span>
+          </div>
+          <a href="https://www.linkedin.com/in/renan-santos-dev/" target="_blank" rel="noopener" class="social-btn" aria-label="Abrir perfil do LinkedIn">
+            <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4zM8.5 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-8.7c0-2.08-.04-4.75-2.9-4.75-2.9 0-3.35 2.27-3.35 4.6V24h-4z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/renawxs" target="_blank" rel="noopener" class="social-btn" aria-label="Abrir perfil do GitHub">
+            <svg viewBox="0 0 24 24" class="social-icon" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.59.24 2.76.12 3.05.74.81 1.19 1.85 1.19 3.11 0 4.43-2.69 5.41-5.25 5.69.42.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.67.8.56C20.72 21.43 24 17.11 24 12.02 24 5.66 18.85.5 12 .5z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          <span class="terminal-title">novo_contato.sh</span>
+        </div>
+        <div class="form-body">
+          <label>
+            <span>Nome</span>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </label>
+          <label>
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p class="form-note" id="formNote"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Renan Santos — desenvolvido com HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
